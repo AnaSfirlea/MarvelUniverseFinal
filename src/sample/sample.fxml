@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-Infinity" prefWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btnHero" layoutX="10.0" layoutY="470.0" mnemonicParsing="false" onAction="#chooseHero" text="Choose Selected Hero" textFill="#460bda">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnVillain" layoutX="570.0" layoutY="469.0" mnemonicParsing="false" onAction="#chooseVillain" prefHeight="23.0" prefWidth="197.0" text="Choose Selected Villain" textFill="#ab0e0e">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnPlanet" layoutX="1130.0" layoutY="470.0" mnemonicParsing="false" onAction="#choosePlanet" text="Choose Selected Planet" textFill="#06d35c">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnFight" layoutX="1570.0" layoutY="470.0" mnemonicParsing="false" onAction="#loadSecond" text="Fight&gt;&gt;" textFill="#d9e40d">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <ListView fx:id="heroesListView" editable="true" layoutX="10.0" layoutY="50.0" prefHeight="400.0" prefWidth="550.0" />
+      <ListView fx:id="villainsListView" editable="true" layoutX="570.0" layoutY="50.0" prefHeight="400.0" prefWidth="550.0" />
+      <ListView fx:id="planetsListView" editable="true" layoutX="1130.0" layoutY="50.0" prefHeight="400.0" prefWidth="550.0" />
+      <Label fx:id="heroesLabel" layoutX="10.0" layoutY="-2.0" text="Heroes" textFill="#0018f5">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="villainsLabel" layoutX="570.0" layoutY="-2.0" text="Villains" textFill="#ae0808">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="planetsLabel" layoutX="1130.0" layoutY="-2.0" text="Planets" textFill="#17e357">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="heroesImage" fitHeight="232.0" fitWidth="269.0" layoutX="10.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="villainImage" fitHeight="400.0" fitWidth="482.0" layoutX="570.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="planetImage" fitHeight="400.0" fitWidth="482.0" layoutX="1157.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true" />
+      <ListView fx:id="avengersListView" layoutX="6.0" layoutY="801.0" prefHeight="155.0" prefWidth="359.0" />
+      <Label layoutX="10.0" layoutY="762.0" prefHeight="39.0" prefWidth="134.0" text="Avengers Team:" textFill="#21b0d0">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
